@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Benson Maliakial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="font-family: Arial; text-align:center; padding:20px;">
+
+    <h2>Benson Maliakial</h2>
+    <p>Founder & CEO</p>
+    <p>EduCare International</p>
+
+    <p>📞 +971503603251</p>
+    <p>📧 benson@educareintl.com</p>
+
+    <button onclick="downloadVCF()" style="padding:10px; background:blue; color:white;">
+        Save Contact
+    </button>
+
+    <script>
+        function downloadVCF() {
+            const vcf = `BEGIN:VCARD
+VERSION:3.0
+FN:Benson Maliakial
+ORG:EduCare International
+TITLE:Founder & CEO
+TEL:+971503603251
+EMAIL:benson@educareintl.com
+END:VCARD`;
+
+            const blob = new Blob([vcf], { type: 'text/vcard' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'benson.vcf';
+            link.click();
+        }
+    </script>
+
+</body>
+</html>

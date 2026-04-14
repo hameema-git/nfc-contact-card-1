@@ -4,6 +4,15 @@ N:Maliakial;Benson;;;
 FN:Benson Maliakial
 ORG:EduCare International
 TITLE:Founder & CEO
-TEL;TYPE=CELL:+971503603251
+
+TEL;TYPE=CELL,VOICE:+971503603251
+
 EMAIL;TYPE=INTERNET:benson@educareintl.com
+
+URL:https://www.educareintl.com
+
+ADR;TYPE=WORK:;;1904, ADCP Business Tower, Office Suite 1904;;;;
+
+NOTE:Founder & CEO at EduCare International
+
 END:VCARD
